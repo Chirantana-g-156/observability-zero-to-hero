@@ -28,7 +28,8 @@ Monitoring is the process of keeping an eye on these metrics over time to unders
 
 ### 🌐 Service Discovery
 - Service discovery automatically identifies and manages the list of scrape targets (i.e., services or applications) that Prometheus monitors.
-- This is crucial in dynamic environments like Kubernetes where services are constantly being created and destroyed.
+- This is crucial in dynamic environments like Kubernetes where services are constantly being created and destroyed.  
+  example ` out of these 100 application which are in k8s cluster read metrics of only these 30 applications `
 - Components:
     - **Kubernetes**: In Kubernetes environments, Prometheus can automatically discover services, pods, and nodes using Kubernetes API, ensuring it monitors the most up-to-date list of targets.
     - **File SD (Service Discovery)**: Prometheus can also read static target configurations from files, allowing for flexibility in environments where dynamic service discovery is not used.
